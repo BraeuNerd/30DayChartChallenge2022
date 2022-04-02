@@ -45,7 +45,7 @@ ggplot(mycal_final, aes(x=day, y=Month, color = Period)) +
                      values = c("#d8867b","#ff1e1e")) +
   scale_fill_manual(values = c("#d8867b","#ff1e1e")) +
   labs(title = "During 2021 my <span style='color:#960018;'>menstrual cycle</span> was more or less regular",
-       subtitle = "at a ~25.5 day cycle",
+       subtitle = "at a ~25 day cycle",
        caption = "Data: my data from My Calendar App  |   Viz: @braeuNERD") +
   theme(plot.background = element_rect(fill = "#171717", color = "#171717"),
         panel.background = element_rect(fill = "#171717"),
