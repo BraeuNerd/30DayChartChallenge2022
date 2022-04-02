@@ -23,11 +23,11 @@ names(mycal) <- c("Date","Period")
 mycal$Date <- as.Date(mycal$Date, "%d-%m-%y")
 mycal$Period <- as.factor(mycal$Period)
 
-# Separate dates in 3 cols: days, months, years and combine year+month for x-axis
+# Separate dates in 3 cols: days, months, years
   
 mycal2 <- mycal %>%
-    mutate_at(vars(Date), funs(year, month, day)) %>%
-    mutate(Month = month(Date, label=T))
+    mutate_at(vars(Date), funs(year, month, day)) %>% #This separates my Date in 3 columns: year, month, day
+    mutate(Month = month(Date, label=T)) # This turns the month (1-12) into Month by characters (i.e. Jan, Feb...)
 
 # Take only the 2021 (for no reason other than it looks prettier than with all 5 years and I couldn't manage to split the months and years the way I wanted with the time I had XD) 
 mycal_final <- mycal2 %>%
