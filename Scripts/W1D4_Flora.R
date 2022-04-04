@@ -18,10 +18,10 @@ eq <- function(x){(-x^2)}
   
 ggplot() + xlim(-10,40) +
   geom_function(fun=eq, color = "#809848", size = 2) +
-  labs(title = "My house<span style='color:#809848;'>plants</span> willingness to <span style='color:#809848;'>live</span>",
+  labs(title = "My house<span style='color:#809848;'>plants'</span> willingness to <span style='color:#809848;'>live</span>",
        caption = "Viz: @braeuNERD",
        x = "The love I give my plants",
-       y = "My plants  
+       y = "My plants'  
        willingness  
        to live") +
   theme(plot.background = element_rect(fill = "white", color = "white"),
